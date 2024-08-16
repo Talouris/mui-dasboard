@@ -1,0 +1,37 @@
+.action {
+    margin: 0px;
+    &__holder {
+        color: #fff;
+        margin: 10px;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    &__item {
+        min-width: 300px;
+        min-height: 70px;
+        background-color: #271bcfcc;
+        text-align: center;
+        border-radius: 4px;
+        transition-duration: 300ms;
+        &:hover {
+            background-color: #271bcfe8;
+            border-radius: 10px;
+        }
+    }
+    &__title-holder {
+        padding-top: 20px;
+    }
+    &__item-title {
+        margin: 0;
+    }
+    &__sub-title-holder {
+        margin: 0;
+    }
+    &__sub-title {
+        margin: 0;
+    }
+}
