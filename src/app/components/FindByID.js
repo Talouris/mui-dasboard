@@ -12,7 +12,7 @@ const ElementFinder = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`http://localhost:3000/api/products/`);
+        const response = await fetch(`https://mui-dasboard.vercel.app/api/products/`);
         if (response.ok) {
           const fetchedData = await response.json();
           setData(fetchedData);
