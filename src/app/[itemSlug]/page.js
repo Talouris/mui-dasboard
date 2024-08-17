@@ -77,7 +77,7 @@ export default function Item({ params }) {
   const fetchItem = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`http://localhost:3000/api/products/${params.itemSlug}`);
+      const response = await fetch(`https://mui-dasboard.vercel.app/api/products/${params.itemSlug}`);
       if (response.ok) {
         const itemElem = await response.json();
         setPost(itemElem[0]);
